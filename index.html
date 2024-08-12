@@ -1,8 +1,60 @@
 <!DOCTYPE html>
 <html>
-    <title>FANOOF</title>
-<body bgcolor="#3a3b3c">
-    <p><font size=500 color="grey">haha its fanoof</font></p>
-<img src="IMAGES/download.jpeg">
+<head>
+    <meta charset="UTF-8">
+    <title>Educational Chat Website</title>
+    <style>
+        /* Basic styles to improve appearance */
+        body {
+            font-family: Arial, sans-serif; /* Sets a clean, readable font */
+            margin: 0; /* Removes default margin */
+            padding: 0; /* Removes default padding */
+            background-color: #f4f4f4; /* Light gray background color */
+        }
+        .container {
+            width: 80%;
+            margin: auto; /* Centers the container on the page */
+            overflow: hidden; /* Ensures elements are properly contained */
+        }
+        .chat-box {
+            background: white; /* White background for the chat box */
+            padding: 20px; /* Adds space inside the chat box */
+            border: 1px solid #ccc; /* Light gray border */
+            border-radius: 5px; /* Rounded corners */
+            height: 400px; /* Fixed height for the chat area */
+            overflow-y: scroll; /* Adds a scrollbar if content overflows */
+        }
+        .input-area {
+            margin-top: 10px; /* Space above the input area */
+        }
+        .input-area input[type="text"] {
+            width: calc(100% - 90px); /* Adjusts width of input field */
+            padding: 10px; /* Adds space inside the input field */
+            border: 1px solid #ccc; /* Light gray border */
+            border-radius: 5px; /* Rounded corners */
+        }
+        .input-area input[type="submit"] {
+            padding: 10px 20px; /* Adds space inside the button */
+            border: none; /* Removes default border */
+            border-radius: 5px; /* Rounded corners */
+            background-color: #007bff; /* Blue background color */
+            color: white; /* White text color */
+            cursor: pointer; /* Pointer cursor on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Educational Chat Interface</h1>
+        <div class="chat-box">
+            <!-- Chat messages will be displayed here -->
+        </div>
+        <div class="input-area">
+            <form action="#" method="post">
+                <input type="text" id="message" name="message" placeholder="Type your message here...">
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </div>
 </body>
 </html>
